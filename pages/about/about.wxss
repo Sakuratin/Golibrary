@@ -1,0 +1,75 @@
+/* pages/about/about.wxss */
+/* pages/personal/personal.wxss */
+page {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(175, 238, 238, 0.274);
+  /* background-color: black; */
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.personal {
+display: inline-block;
+width: 85%;
+height: 60%;
+background-color: white;
+padding: 70rpx 10rpx 0 10rpx;
+margin: auto;
+border-radius: 15rpx;
+margin-left: 30rpx;
+position: relative;
+top: 130rpx;
+}
+
+.avator {
+width: 80%;
+height: 50%;
+margin: auto;
+}
+
+.avator>image {
+width: 100%;
+height: 100%;
+border-radius: 25rpx;
+}
+
+.scroll-view {
+display: flex;
+white-space: nowrap; 
+/* 禁止文件自动换行 */
+}
+
+
+.person-info {
+margin-top: 40rpx;
+width: 88%;
+}
+.person-info .person-name {
+/* font-size: 40rpx; */
+color: rgb(68, 68, 68);
+font-weight: 400;
+text-align: left;
+display: inline-block;
+margin: 0 auto 24rpx 66rpx;
+/* border-bottom: 1px solid #999; */
+}
+.person-info .person-des view{
+font-weight: 400;
+text-align: left;
+display: inline-block;
+margin: 0 auto 24rpx 66rpx;
+/* border-bottom: 1px solid #999; */
+color: black;
+font-size: 1.2rem;
+
+}
+
+.person-des:nth-of-type(2) {
+white-space: pre-wrap; 
+/* pre-wrap表示：保留空白符序列，但是正常地进行换行 */
+}

@@ -1,0 +1,48 @@
+<!--pages/details/details.wxml-->
+<view class="box-img">
+    <image src="{{bookinfo.cover}}" alt="" style="display: block; width: 100%; border-radius: 8%;"></image>
+    <view class="back-view" bindtap="goback">
+        <image src="/images/back.png" class="backIcon"></image>
+    </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+获取中
+</loading>
+<view class="box-description">
+    
+    <view class="des-book">
+        <image 
+        data-bookname="{{bookinfo.name}}"
+        data-booklink="{{booklink}}"
+        data-bookcover="{{bookinfo.cover}}"
+        data-bookauthor="{{bookinfo.author}}"
+        data-publisher="{{bookinfo.publisher}}"
+        bindtap="addCollect" class="collect-btn" src="{{collect_yes ? '/images/collect-yes.png': '/images/collect-not.png'}}"></image>
+
+        <view class="info-title" 
+            style="margin-top: 22px;width:100%; margin-left: 14px;clear: both;"
+            
+        >{{bookinfo.name}}</view>
+            <view class="des-item">年份： {{bookinfo.year}}</view>
+            <view class="des-item">语言： {{bookinfo.language}}</view>
+            <view class="des-item">系列： {{bookinfo.series}}</view>
+            <view class="des-item">页数： {{bookinfo.pages}}</view>
+            <view class="des-item" style="width: 330rpx">文件： {{bookinfo.files}}</view>
+            <view class="des-item" style="width: 330rpx">出版社： {{bookinfo.publisher}}</view>
+    </view>
+    <view class="introduce">
+        <view class="info-title" style="margin-left: 31rpx;clear: both;">书本简介</view>
+        <view class="intro-txt">{{bookinfo.review}}</view>
+        <!-- <view style="margin-top: 14rpx;margin-left: 26rpx;clear: both;" class="info-title">猜你喜欢</view> -->
+        <!-- <view class="img-bottom">
+            <image src="/images/cover"></image>
+            <image src="/images/cover"></image>
+            <image src="/images/cover"></image>
+            <image src="/images/cover"></image>
+        </view> -->
+    </view>
+    
+    <view class="btn-view" style="display: flex;padding: 20rpx 10rpx;">
+        <button class="download-btn" style="width: 85%;height:80%;" bindtap="getDownload">下载</button>
+    </view>
+</view>

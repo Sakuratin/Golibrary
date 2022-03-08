@@ -1,0 +1,21 @@
+<!--pages/info/info.wxml-->
+<view class="container">
+    <view class="info-top" bindtap="goback">
+        <image src="/images/back-blank.png"></image>
+        个人信息
+    </view>
+    <view class="info-base">
+        <view class="infotop-img">
+            <view class="img-left"><image src="/images/head.svg"></image></view>
+            <view class="img-right"><image src="{{userinfo.avatar}}" style="border-radius: 50rpx;"></image></view>
+        </view>
+        <view class="infomiddle-img">
+            <view class="info-img"><image src="/images/info.svg"></image></view>
+            <text class="tom-cat">{{userinfo.nickname}}</text>
+        </view>
+        <view class="infobottom-img">
+            <view class="email-img"><image src="/images/email.svg"></image></view>
+            <text class="email-txt">{{userinfo.email}}</text>
+        </view>
+    </view>
+</view>

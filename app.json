@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/index/index",
+    "pages/info/info",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/about/about",
+    "pages/details/details",
+    "pages/history/history",
+    "pages/collects/collects",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/search/search",
+      "iconPath": "/images/tushu-books.png",
+      "selectedIconPath": "/images/tushu-books-selected.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "iconPath": "/images/user.png",
+      "selectedIconPath": "/images/user-selected.png"
+    }]
+  }
+}

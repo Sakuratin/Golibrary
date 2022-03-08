@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 返回图标 -->
+    <!-- <view class="back">
+        
+    </view> -->
+    <!-- 头像及介绍部分 -->
+    <view class="info">
+        <view class="info-img">
+            <image src="{{userinfo.imageurl}}"></image>
+        </view>
+        <view class="info-name">
+            {{userinfo.nickname}}
+        </view>
+        <view class="info-des">
+            <!-- 这个人很懒，什么都留下了 -->
+        </view>
+    </view>
+
+<!-- 下方图标设置展示 -->
+    <view class="icons">
+        <view class="icons-detail" bindtap="toCollect">
+            <image src="/images/Vector.svg"></image>
+            <view class="icons-txt">收藏</view>
+        </view>
+        <view class="icons-detail" bindtap="toDownload">
+            <image src="/images/download.svg"></image>
+            <view class="icons-txt">下载</view>
+        </view>
+        <!-- <view class="icons-detail" bindtap="toInfo">
+            <image src="/images/info.svg"></image>
+            <view class="icons-txt">信息</view>
+        </view> -->
+        <view class="icons-detail" 
+        data-imageurl="{{userinfo.imageurl}}"
+        data-nickname="{{userinfo.nickname}}"
+        data-email="{{userinfo.email}}"
+         bindtap="toSetting">
+            <image src="/images/setting.svg"></image>
+            <view class="icons-txt">设置</view>
+        </view>
+        <view class="icons-detail" bindtap="toAbout">
+            <image src="/images/about.svg"></image>
+            <view class="icons-txt" bindtap="toAbout">关于</view>
+        </view>
+        <view class="icons-detail" bindtap="toExit">
+            <image src="/images/exit.svg"></image>
+            <view class="icons-txt" bindtap="toExit">退出</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,59 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+    <scroll-view scroll-x="true" class="scroll-view" style="height: 100%;width: 100%;" >
+        <view class="personal">
+            <view class="avator">
+                <image src="/images/zhao.jpg"></image>
+            </view>
+            <view class="person-info">
+                <view class="person-name">赵婷婷@Sakura</view>
+                <view class="person-des">
+                    <view>主要负责：前端开发</view>
+                    <view style="font-size: 60rpx;">你有权保持沉默,但你所说的都将成为呈堂证供。</view>
+                </view>
+
+            </view>
+        </view>
+        <view class="personal">
+            <view class="avator">
+                <image src="/images/zhou.jpg"></image>
+            </view>
+            <view class="person-info">
+                <view class="person-name">周杰@Loid</view>
+                <view class="person-des">
+                    <view>主要负责：后端开发</view>
+                    <view style="font-size: 60rpx;">熟练使用各种语言写HelloWorld，PHP天下第一。</view>
+                </view>
+
+            </view>
+        </view>
+        <view class="personal">
+            <view class="avator">
+                <image src="/images/yang.jpg"></image>
+            </view>
+            <view class="person-info">
+                <view class="person-name">阳小宾</view>
+                <view class="person-des">
+                    <view>主要负责：后端开发</view>
+                    <view style="font-size: 60rpx;">人生的光荣，不在永不言败，而在于能够屡败屡起！</view>
+                </view>
+
+            </view>
+        </view>
+        <view class="personal">
+            <view class="avator">
+                <image src="/images/yu.jpg"></image>
+            </view>
+            <view class="person-info">
+                <view class="person-name">余志鹏</view>
+                <view class="person-des">
+                    <view>主要负责：后端开发</view>
+                    <view style="font-size: 60rpx;">埋骨何须桑梓地， <br /> 人生何处不青山。——毛泽东</view>
+                </view>
+
+            </view>
+        </view>
+    </scroll-view>
+    
+</view>
+

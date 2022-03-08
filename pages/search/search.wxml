@@ -1,0 +1,33 @@
+<view id="container">
+  <loading hidden="{{loadingHidden}}">
+    搜索中
+  </loading>
+    <view class="search">
+      <view class="welcom">
+        <view>Welcome back，👋</view>
+        <view>Library Searching</view>
+      </view>
+      <input placeholder-class="placeholder-class" type="text" v-model="keyword" name="search" placeholder="图书搜索" bindconfirm="searchEvent" />
+    </view>
+    <view class="search-choice">
+      
+    </view>
+    <view id="book-list">
+      <view wx:for="{{books}}" wx:key="this" class="book-item" data-link="{{item.link}}" data-bookname="{{item.name}}" bindtap="toDetail">
+        <view >
+          <image src="{{item.cover}}" alt="" />
+        </view>
+        <view class="book-info">
+          <view class="name">{{item.name}}</view>
+          <view class="publisher info-text">
+            <view>出版社: {{item.publisher}}</view>
+            <view>作者: {{item.author}}</view>
+          </view>
+          <view class="file-info info-text">
+            <text>{{item.filetype}}</text>
+            <text>{{item.filesize}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

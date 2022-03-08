@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <loading hidden="{{loadingHidden}}">
+        加载中
+    </loading>
+    <view class="login-icon">
+        <image src="/images/logo.svg"></image>
+    </view>
+    <view class="login-info">
+        <text class="login-txt">注册</text>
+        <form>
+            <input type="email" bindinput="emailInput" name="email" placeholder="邮箱" style="margin-top: 60rpx;"/>
+            <input type="password" bindinput="passwordInput"  name="password" placeholder="密码" />
+            <input type="password" bindinput="repasswordIput" name="repassword" placeholder="确认密码" />
+            <button form-type="submit" bindtap="submitForm" class="login-btn">立即注册</button>
+        </form>
+        <view class="regist-txt">
+            <text class="txtl">已有账号？</text>
+            <text bindtap="pages/regist" class="txtr" bindtap="toLogin">登录</text>
+        </view>
+    </view>
+    <!-- <view class="fast-login">
+        <image src="/images/wechat.svg"></image>
+        <text>微信一键登陆</text>
+    </view> -->
+</view>

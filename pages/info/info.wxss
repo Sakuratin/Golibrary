@@ -1,0 +1,92 @@
+/* pages/info/info.wxss */
+page {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(175, 238, 238, 0.274);
+  /* background-color: black; */
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.info-top {
+  margin-top: 24rpx;
+  margin-left: 40rpx;
+  width: 100%;
+  /* background-color: teal; */
+}
+.info-top image {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  position: relative;
+  top: 5rpx;
+  left: 10rpx;
+}
+.info-base{
+  width: 90%;
+  background-color: white;
+  margin: 40rpx auto;
+  border-radius: 30rpx;
+}
+.info-base image {
+  width: 80rpx;
+  height: 80rpx;
+  /* border-radius: 50rpx; */
+}
+.info-base .infotop-img, .infomiddle-img, .infobottom-img {
+  /* width: 90%; */
+  position: relative;
+  display: flex;
+  padding-top: 40rpx;
+}
+.info-base .infotop-img .img-left {
+  /* padding: 0 auto 0 30rpx; */
+  padding-left: 50rpx;
+}
+.info-base .infotop-img .img-right{
+  position: absolute;
+  /* margin-right: 30rpx; */
+  right: 50rpx;
+  /* background-color: teal; */
+}
+.info-base .infomiddle-img .info-img {
+  padding-left: 50rpx;
+  position: relative;
+  top: 5rpx;
+  /* margin-top: 24rpx; */
+}
+.info-base .infomiddle-img .tom-cat {
+  font-size: 35rpx;
+  color: #999;
+  position: absolute;
+  right: 50rpx;
+}
+.info-base .infobottom-img .email-img {
+  padding-left: 50rpx;
+  position: relative;
+  top: 8rpx;
+}
+.info-base .infobottom-img .email-txt {
+  font-size: 35rpx;
+  color: #999;
+  position: absolute;
+  right: 50rpx;
+ 
+}
+.info-base .infobottom-img {
+  padding-bottom: 40rpx;
+}
+
+.img-left image, .info-img image, .email-img image {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 4rpx
+}
+
+.infotop-img, .infomiddle-img, .infobottom-img {
+  align-items: center;
+}
